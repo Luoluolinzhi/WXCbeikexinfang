@@ -1,0 +1,149 @@
+<!--pages/detail/index.wxml-->
+<!--<text>pages/detail/index.wxml</text>-->
+<view class="Info">
+  <view class="topall">
+    <view class="top">
+      <text class="toptitle">大运河孔雀城</text>
+      <text class="toplebalS">商铺</text>
+      <text class="toplebalZ">在售</text>
+    </view>
+    <view class="byName">
+      <text class="byname">别名：大运河孔雀城温莎郡</text>
+    </view>
+    <view class="topimage">
+      <image class="topimaged" src="./image/d.png"></image>
+      <!-- <image class="topimagea" src="./image/a.png"></image>
+      <image class="topimageb" src="./image/b.png"></image>
+      <image class="topimagec" src="./image/c.png"></image>-->
+    </view>
+    <view class="detail">
+      <view class="detaila">
+        <view>
+          <text class="detailtitle">售价</text>
+        </view>
+        <view>
+        <text class="detailcontent">630万</text>
+        </view>
+      </view>
+      <view class="detailb">
+        <view>
+          <text class="detailtitle">房型</text>
+        </view>
+        <view>
+        <text class="detailcontent">2室1厅</text>
+        </view>
+      </view>
+      <view class="detailc">
+        <view>
+          <text class="detailtitle">建筑面积</text>
+        </view>
+        <view>
+        <text class="detailcontent">90.34m²</text>
+        </view>
+      </view>
+    </view>
+    <view class="kaiPan">
+      <view class="kaipan">
+        <text class="kai">开盘时间:</text>
+        <text class="yu">预计五月开盘</text>
+        <text class="jian">></text>
+      </view>
+      <view class='kaipan'>
+        <text class="kai">地址:</text>
+        <text class="yu">顺义新城第二十一街区</text>
+        <text class="jian">></text>
+      </view>
+    </view>
+    <view class="zhekou">
+      <image class="zhekouimg" src="./image/Coupon_icon@2x.png"></image>
+      <text class="zhekoutext">全款9.8折，贷款9.9折</text>
+      <view >
+        <text class="ling">领优惠</text>
+      </view>
+    </view>
+    <view class="morehouse">
+      <text>更多房源信息</text>
+    </view>
+  </view>
+  <view class="contentall">
+    <view class="housenumber">
+      <text class="housenum housethis">四室</text>
+      <text class="housenum">三室</text>
+      <text class="housenum">二室</text>
+    </view>
+    <view class="houseDetail">
+      <image src="./image/aa.png" class="houseDetailimg"></image>
+      <view class="">
+        <view>
+          <text class="houseDetailA">四室一厅两卫</text>
+          <text class="houseDetailB">在售</text>
+          <text class="houseDetailC">热门</text>
+        </view>
+        <view>
+          <text class="houseDetailD">建面191㎡/南北向</text>
+        </view>
+        <view>
+          <text class="houseDetailE">多卫</text>
+          <text class="houseDetailE">干湿分离</text>
+          <text class="houseDetailE">户型方正</text>
+        </view>
+        <view>
+          <text class="houseDetailF">约</text>
+          <text class="houseDetailF">1630</text>
+          <text class="houseDetailF">万/套</text>
+        </view>
+      </view>
+    </view>
+    <view class="houseDetail">
+      <image src="./image/bb.png" class="houseDetailimg"></image>
+      <view class="">
+        <view>
+          <text class="houseDetailA">四室两厅两卫</text>
+          <text class="houseDetailG">待售</text>
+        </view>
+        <view>
+          <text class="houseDetailD">建面191㎡/南北向</text>
+        </view>
+        <view>
+          <text class="houseDetailE">多卫</text>
+          <text class="houseDetailE">干湿分离</text>
+          <text class="houseDetailE">户型方正</text>
+        </view>
+        <view>
+          <text class="houseDetailF">约</text>
+          <text class="houseDetailF">1630</text>
+          <text class="houseDetailF">万/套</text>
+        </view>
+      </view>
+    </view>
+    <view class="houseDetail">
+      <image src="./image/cc.png" class="houseDetailimg"></image>
+      <view class="">
+        <view>
+          <text class="houseDetailA">四室两厅三卫</text>
+          <text class="houseDetailH">售罄</text>
+        </view>
+        <view>
+          <text class="houseDetailD">建面191㎡/南北向</text>
+        </view>
+        <view>
+          <text class="houseDetailE">多卫</text>
+          <text class="houseDetailE">干湿分离</text>
+          <text class="houseDetailE">户型方正</text>
+        </view>
+        <view>
+          <text class="houseDetailF">约</text>
+          <text class="houseDetailF">1630</text>
+          <text class="houseDetailF">万/套</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="commentall">
+    <view class="commentTitle">
+      <text class="commentTitleA">用户评论</text>
+      <text class="commentTitleB">更多点评</text>
+    </view>
+  </view>
+</view>
+

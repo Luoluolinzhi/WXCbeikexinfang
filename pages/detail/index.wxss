@@ -1,0 +1,316 @@
+/* pages/detail/index.wxss */
+.Info{
+
+  background: rgb(246, 246, 247);
+}
+.topall{  
+  padding: 40rpx 44rpx 20rpx 44rpx;
+  background: #fff;
+}
+.contentall{
+  padding: 0rpx 44rpx;
+  margin-top: 24rpx;
+  background: #fff;
+}
+.commentall{
+  padding: 0rpx 44rpx;
+  margin-top: 24rpx;
+  background: #000;
+}
+.toptitle{
+  font-family: PingFangSC-Medium;
+  font-size: 44rpx;
+  color: #101D37;
+  letter-spacing: 0;
+  line-height: 44rpx;
+}
+.toplebalS{
+  font-family: PingFangSC-Regular;
+  font-size: 11px;
+  color: #B199FF;
+  letter-spacing: -0.254rpx;
+  line-height: 44rpx;
+  background: rgba(177, 153, 255, 0.15);
+  border-radius: 4rpx;
+  margin: 2rpx 8rpx;
+ 
+}
+.toplebalZ{
+  font-family: PingFangSC-Regular;
+  font-size: 11px;
+  color: #B199FF;
+  letter-spacing: -0.54rpx;
+  line-height: 44rpx;
+  background: rgba(0, 174, 202, 0.15);
+  border-radius: 4rpx;
+  margin: 2rpx 8rpx;
+}
+.byName{
+  background: #fff;
+}
+.byname{
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #6B7072;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+.topimage{
+  background: #fff;
+  /* display: -webkit-flex;  Safari 
+  display: flex;
+}
+.topimagea{
+ width:476rpx;
+ height: 360rpx; 
+
+}
+.topimageb{
+  width: 232rpx;
+  height: 174rpx;
+  
+}
+.topimagec{
+  width: 232rpx;
+  height: 174rpx; */
+  
+}
+.topimaged{
+  width: 654rpx;
+  height: 360rpx;
+}
+.detail{
+  direction: row;
+  display: flex;
+  width: 654rpx;
+  background: #fff;
+}
+.detaila{
+  width: 218rpx;
+}
+.detailb{
+  width: 218rpx;
+}
+.detailc{
+  width: 218rpx;
+}
+.detailtitle{
+  background: #FFFFFF;
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #9399A5;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.05);
+}
+.detailcontent{
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  color: #FA5741;
+}
+.kaiPan{
+  background: #fff;
+}
+.kaipan{
+  margin-top: 20rpx;
+}
+.kai{
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #394043;
+  letter-spacing: 0;
+  line-height: 44rpx;
+  margin-right: 20rpx;
+}
+.yu{
+  font-family: PingFangSC-Regular;
+  font-size:30rpx;
+  color: rgb(110, 145, 178);
+  line-height: 44rpx;
+}
+.jian{
+  float: right;
+  color: #9C9FA1;
+  line-height: 44rpx;
+  font-size:30rpx;
+}
+.zhekou{
+  width: 654rpx;
+  height: 100rpx;
+  background: rgba(250,87,65,0.08);
+  border-radius: 4rpx;
+  margin-top: 20rpx;
+}
+.zhekouimg{
+  width: 40rpx;
+  height: 30rpx;
+  margin-left: 24rpx;
+  margin-top: 36rpx;
+  float: left;
+}
+.zhekoutext{
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #FA5741;
+  letter-spacing: 0;
+  line-height: 100rpx;
+  float: left;
+}
+.ling{
+  width: 138rpx;
+  height: 52rpx;
+  background: #FA5741;
+  border-radius: 200rpx;
+  font-family: PingFangSC-Regular;
+  font-size:  24rpx;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  float: right;
+  line-height: 52rpx;
+  text-align: center;
+  margin-top: 24rpx;
+}
+.morehouse{
+  width: 654rpx;
+  height: 88rpx;
+  background: #F9F9F9;
+  border-radius: 200rpx;
+  text-align: center;
+  line-height: 88rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #3072F6;
+  letter-spacing: 0;
+  margin-top: 20rpx;
+}
+.housenumber{
+  padding-top: 40rpx;
+}
+.housenum{
+  margin-left: 48rpx; 
+  margin-right: 24rpx;
+  font-family: PingFangSC-Medium;
+  font-size: 36rpx;
+  font-weight: 600;
+}
+.housethis{
+  color: #3072F6;
+}
+.houseDetail{
+  padding-top: 40rpx;
+  padding-left: 250rpx;
+  position: relative;
+}
+.houseDetailimg{
+  width: 210rpx;
+  height: 160rpx;
+  position: absolute;
+  left: 0;
+  margin: 40rpx 40rpx 40rpx 0;
+}
+.houseDetailA{
+  font-family: PingFangHK-Medium;
+  font-size: 32rpx;
+  color: #394043;
+  letter-spacing: 0;
+  line-height: 50rpx;
+  font-weight: 500;
+}
+.houseDetailB{
+   width: 60rpx;
+  height: 30rpx;
+  text-align: center;
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+  font-size: 20rpx;
+  color: #00AE66;
+  letter-spacing: 0;
+  line-height: 30rpx;
+  background: rgb(217, 243, 232);
+  border-radius: 4rpx;
+  margin-left: 16rpx;
+}
+.houseDetailC{
+  width: 50rpx;
+  height: 30rpx;
+  text-align: center;
+  display: inline-block;
+  font-family: PingFangSC-Medium;
+  font-size: 16rpx;
+  color: #FFFFFF;
+  letter-spacing: -0.3rpx;
+  line-height: 30rpx;
+  background: rgb(251, 67, 94);
+  border-radius: 16rpx 4rpx 16rpx 4rpx;
+  margin-left: 16rpx;
+}
+.houseDetailD{
+  font-family: PingFangHK-Regular;
+  font-size: 24rpx;
+  color: #6B7072;
+  letter-spacing: 0;
+  line-height: 34rpx;
+}
+.houseDetailE{
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+  font-size: 22rpx;
+  color: #9C9FA1;
+  letter-spacing: 0;
+  margin-right: 28rpx;
+  border: 2rpx solid #E5E5E5;
+  border-radius: 4rpx;
+}
+.houseDetailF{
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  color: #FE615A;
+  letter-spacing: 0;
+  text-align: center;
+  }
+.houseDetailG {
+  width: 50rpx;
+  height: 30rpx;
+  text-align: center;
+  display: inline-block;
+  font-family: PingFangSC-Medium;
+  font-size: 16rpx;
+  color: #FF7326;
+  letter-spacing: -0.3rpx;
+  line-height: 30rpx;
+  background: rgba(255, 115, 38,0.15);
+  border-radius: 4rpx;
+  margin-left: 16rpx;
+}
+.houseDetailH {
+  width: 50rpx;
+  height: 30rpx;
+  text-align: center;
+  display: inline-block;
+  font-family: PingFangSC-Medium;
+  font-size: 16rpx;
+  color: #9C9FA1;
+  letter-spacing: -0.3rpx;
+  line-height: 30rpx;
+  background: rgba(156, 159, 161,0.15);
+  border-radius: 4rpx;
+  margin-left: 16rpx;
+}
+.commentTitleA{
+  float: left;
+  font-family: PingFangHK-Medium;
+  font-size: 38rpx;
+  color: #101D37;
+  letter-spacing: -0.92rpx;
+  font-weight: 600;
+  margin: 44rpx 0rpx;
+}
+.commentTitleB{
+  float: right;
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #9399A5;
+  letter-spacing: 0;
+  line-height: 36rpx;
+  margin: 54rpx 0rpx;
+  }
+  .commentTitle{
+  }
