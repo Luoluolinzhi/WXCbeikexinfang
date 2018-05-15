@@ -377,6 +377,7 @@
   letter-spacing: 0;
   line-height:  34rpx;
   margin-right: 26rpx;
+  display: inline-block;
 }
 .centerborder{
   width: 706rpx;
