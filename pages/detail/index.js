@@ -63,6 +63,10 @@ Page({
   onShareAppMessage: function () {
   
   },
+  
+  /**
+   * 页面接口
+   */
   getData: function () {
     var that = this;
     wx.request({
