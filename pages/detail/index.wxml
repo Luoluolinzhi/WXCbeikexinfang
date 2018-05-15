@@ -154,50 +154,36 @@
       <text class="commentImgC">4.0</text>
       <text class="commentImgB">分</text>
     </view>
-    <view class="commentComment">
-      <text class="commentCommentA">周围配套3.6分</text>
-      <text class="commentCommentA">交通方便3.7分</text>
-      <text class="commentCommentA">环境绿化4.2分</text>
+    <view class="commentComment" wx:for="{{mainInfo.data.comments.tab_score}}">
+      <text class="commentCommentA">{{item.name}}{{item.score}}</text>
     </view>
     <view class="centerborder"></view>
     <view class="commentComList">
       <view class=" commentComListAA">
-        <text class=" commentComListBB">全部点评(</text>
-        <text class=" commentComListBB">6</text>
-        <text class=" commentComListBB">)</text>
+        <text class=" commentComListBB">全部点评(6)</text>
       </view>
       <view class="commentComListA">
-        <text class="commentComListB">实看用户(</text>
-        <text class="commentComListB">5</text>
-        <text class="commentComListB">)</text>
+        <text class="commentComListB">实看用户(5)</text>
       </view>
       <view class="commentComListA">
-        <text class="commentComListB">购买用户(</text>
-        <text class="commentComListB">5</text>
-        <text class="commentComListB">)</text>
+        <text class="commentComListB">购买用户(5)</text>
       </view>
       <view class="commentComListA">
-        <text class="commentComListB">好评(</text>
-        <text class="commentComListB">5</text>
-        <text class="commentComListB">)</text>
+        <text class="commentComListB">好评(5)</text>
       </view>
       <view class="commentComListA">
-        <text class="commentComListB">差评(</text>
-        <text class="commentComListB">65</text>
-        <text class="commentComListB">)</text>
+        <text class="commentComListB">差评(65)</text>
       </view>
       <view class="commentComListA">
-        <text class="commentComListB">有图(</text>
-        <text class="commentComListB">5</text>
-        <text class="commentComListB">)</text>
+        <text class="commentComListB">有图(5)</text>
       </view>
     </view>
-    <view class="commentEg">
+    <view class="commentEg"   wx:for="{{mainInfo.data.comments.comment}}">
       <view class="commentEgA">
-        <image src="./image/person1.png" class="commentEgAA"></image>
+        <image src="{{item.user_image}}" class="commentEgAA"></image>
         <view class="commentEgB">
           <view class="commentEgBB">
-            <text class="commentEgBC">王小毅</text>
+            <text class="commentEgBC">{{item.user_name}}</text>
           </view>
           <view class="commentEgC">
             <image class="commentEgCC" src="./image/Star_small_act@2x.png"></image>
@@ -214,59 +200,33 @@
         </view>
       </view>
       <view class="commentEgB">
-        <text class="commentEgBB">{{mainInfo.data.comments.comment.user_comment}}</text>
+        <text class="commentEgBB">{{item.user_comment}}</text>
       </view>
       <view class="commentEgC">
         <text class="commentEgCC">全文</text>
       </view>
       <view class="commentEgC">
-        <text class="commentEgCC">2017年07月26日</text>
+        <text class="commentEgCC">{{item.create_time}}</text>
       </view>
     </view>
   </view>
   <view class="askall">
     <view class="askTitle">
-      <text class="askTitleA">买房问大家(</text>
-      <text class="askTitleA">1389</text>
-      <text class="askTitleA">)</text>
+      <text class="askTitleA">买房问大家(1389)</text>
       <text class="askTitleB">查看全部></text>
     </view>
-    <view class="ackContentA">
-      <image src="./image/ask@2x.png" class="ackContentAA"></image>
-      <view class="ackContentB">
-        <text class="ackContentBB">塔楼，户型是南北通透面积114平使用面积能不有多少？</text>
-      </view>
-      <view class="ackContentC">
-        <text class="ackContentCC">1,982</text>
-        <text class="ackContentCC">人关注 | </text>
-        <text class="ackContentCC">98</text>
-        <text class="ackContentCC">个回答</text>
-      </view>
-    </view>
-    <view class="ackContentA">
-      <image src="./image/ask@2x.png" class="ackContentAA"></image>
-      <view class="ackContentB">
-        <text class="ackContentBB">塔楼，户型是南北通透面积114平不有多少？</text>
-      </view>
-      <view class="ackContentC">
-        <text class="ackContentCC">1,982</text>
-        <text class="ackContentCC">人关注 | </text>
-        <text class="ackContentCC">98</text>
-        <text class="ackContentCC">个回答</text>
+    <view wx:for="{{mainInfo.data.questions}}">
+      <view class="ackContentA">
+        <image src="./image/ask@2x.png" class="ackContentAA"></image>
+        <view class="ackContentB">
+          <text class="ackContentBB">{{item.question}}</text>
+        </view>
+        <view class="ackContentC">
+          <text class="ackContentCC">{{item.attention_num}}人关注 | {{item.answer_num}}个回答</text>
+        </view>
       </view>
     </view>
-    <view class="ackContentA">
-      <image src="./image/ask@2x.png" class="ackContentAA"></image>
-      <view class="ackContentB">
-        <text class="ackContentBB">塔楼，户型是南北通透面积114平不有多少？</text>
-      </view>
-      <view class="ackContentC">
-        <text class="ackContentCC">1,982</text>
-        <text class="ackContentCC">人关注 | </text>
-        <text class="ackContentCC">98</text>
-        <text class="ackContentCC">个回答</text>
-      </view>
-    </view>
+   
   </view>
   <view class="recommendall">
     <view class="askTitle">
@@ -280,10 +240,7 @@
         <text class="recommendallABC">住宅</text>
       </view>
       <view class="recommendallAC">
-        <text class="recommendallACC">均价</text>
-        <text class="recommendallACC">87152</text>
-        <text class="recommendallACC">元/平
-        </text>
+        <text class="recommendallACC">均价87152元/平</text>
       </view>
     </view>
   </view>
