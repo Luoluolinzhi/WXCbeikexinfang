@@ -3,12 +3,12 @@
 <view class="Info">
   <view class="topall">
     <view class="top">
-      <text class="toptitle">大运河孔雀城</text>
+      <text class="toptitle">{{mainInfo.data.house_info.title}}</text>
       <text class="toplebalS">商铺</text>
       <text class="toplebalZ">在售</text>
     </view>
     <view class="byName">
-      <text class="byname">别名：大运河孔雀城温莎郡</text>
+      <text class="byname">{{mainInfo.data.house_info.seTitle}}</text>
     </view>
     <view class="topimage">
       <image class="topimaged" src="./image/d.png"></image>
@@ -22,7 +22,7 @@
           <text class="detailtitle">售价</text>
         </view>
         <view>
-        <text class="detailcontent">630万</text>
+        <text class="detailcontent">{{mainInfo.data.house_info.price}}万</text>
         </view>
       </view>
       <view class="detailb">
@@ -30,7 +30,7 @@
           <text class="detailtitle">房型</text>
         </view>
         <view>
-        <text class="detailcontent">2室1厅</text>
+        <text class="detailcontent">{{mainInfo.data.house_info.type}}</text>
         </view>
       </view>
       <view class="detailc">
@@ -38,19 +38,19 @@
           <text class="detailtitle">建筑面积</text>
         </view>
         <view>
-        <text class="detailcontent">90.34m²</text>
+        <text class="detailcontent">{{mainInfo.data.house_info.area}}m²</text>
         </view>
       </view>
     </view>
     <view class="kaiPan">
       <view class="kaipan">
         <text class="kai">开盘时间:</text>
-        <text class="yu">预计五月开盘</text>
+        <text class="yu">{{mainInfo.data.house_info.open_time}}</text>
         <text class="jian">></text>
       </view>
       <view class='kaipan'>
         <text class="kai">地址:</text>
-        <text class="yu">顺义新城第二十一街区</text>
+        <text class="yu">{{mainInfo.data.house_info.address}}</text>
         <text class="jian">></text>
       </view>
     </view>
@@ -140,10 +140,159 @@
     </view>
   </view>
   <view class="commentall">
-    <view class="commentTitle">
+    <view class="commentTitle clearfix">
       <text class="commentTitleA">用户评论</text>
       <text class="commentTitleB">更多点评</text>
     </view>
+    <view class="commentImg">
+      <image class="commentImgA" src="./image/Star_small_act@2x.png"></image>
+      <image class="commentImgA" src="./image/Star_small_act@2x.png"></image>
+      <image class="commentImgA" src="./image/Star_small_act@2x.png"></image>
+      <image class="commentImgA" src="./image/Star_small_act@2x.png"></image>
+      <image class="commentImgA" src="./image/Star_small_nor@2x.png"></image>
+      <text class="commentImgB">综合</text>
+      <text class="commentImgC">4.0</text>
+      <text class="commentImgB">分</text>
+    </view>
+    <view class="commentComment">
+      <text class="commentCommentA">周围配套3.6分</text>
+      <text class="commentCommentA">交通方便3.7分</text>
+      <text class="commentCommentA">环境绿化4.2分</text>
+    </view>
+    <view class="centerborder"></view>
+    <view class="commentComList">
+      <view class=" commentComListAA">
+        <text class=" commentComListBB">全部点评(</text>
+        <text class=" commentComListBB">6</text>
+        <text class=" commentComListBB">)</text>
+      </view>
+      <view class="commentComListA">
+        <text class="commentComListB">实看用户(</text>
+        <text class="commentComListB">5</text>
+        <text class="commentComListB">)</text>
+      </view>
+      <view class="commentComListA">
+        <text class="commentComListB">购买用户(</text>
+        <text class="commentComListB">5</text>
+        <text class="commentComListB">)</text>
+      </view>
+      <view class="commentComListA">
+        <text class="commentComListB">好评(</text>
+        <text class="commentComListB">5</text>
+        <text class="commentComListB">)</text>
+      </view>
+      <view class="commentComListA">
+        <text class="commentComListB">差评(</text>
+        <text class="commentComListB">65</text>
+        <text class="commentComListB">)</text>
+      </view>
+      <view class="commentComListA">
+        <text class="commentComListB">有图(</text>
+        <text class="commentComListB">5</text>
+        <text class="commentComListB">)</text>
+      </view>
+    </view>
+    <view class="commentEg">
+      <view class="commentEgA">
+        <image src="./image/person1.png" class="commentEgAA"></image>
+        <view class="commentEgB">
+          <view class="commentEgBB">
+            <text class="commentEgBC">王小毅</text>
+          </view>
+          <view class="commentEgC">
+            <image class="commentEgCC" src="./image/Star_small_act@2x.png"></image>
+            <image class="commentEgCC" src="./image/Star_small_act@2x.png"></image>
+            <image class="commentEgCC" src="./image/Star_small_act@2x.png"></image>
+            <image class="commentEgCC" src="./image/Star_small_act@2x.png"></image>
+            <image class="commentEgCC" src="./image/Star_small_nor@2x.png"></image>
+            <text class="commentEgCD">配套3</text>
+            <view class="commentEgCE"></view>
+            <text class="commentEgCD">交通3</text>
+            <view class="commentEgCE"></view>
+            <text class="commentEgCD">绿化3</text> 
+          </view>
+        </view>
+      </view>
+      <view class="commentEgB">
+        <text class="commentEgBB">{{mainInfo.data.comments.comment.user_comment}}</text>
+      </view>
+      <view class="commentEgC">
+        <text class="commentEgCC">全文</text>
+      </view>
+      <view class="commentEgC">
+        <text class="commentEgCC">2017年07月26日</text>
+      </view>
+    </view>
+  </view>
+  <view class="askall">
+    <view class="askTitle">
+      <text class="askTitleA">买房问大家(</text>
+      <text class="askTitleA">1389</text>
+      <text class="askTitleA">)</text>
+      <text class="askTitleB">查看全部></text>
+    </view>
+    <view class="ackContentA">
+      <image src="./image/ask@2x.png" class="ackContentAA"></image>
+      <view class="ackContentB">
+        <text class="ackContentBB">塔楼，户型是南北通透面积114平使用面积能不有多少？</text>
+      </view>
+      <view class="ackContentC">
+        <text class="ackContentCC">1,982</text>
+        <text class="ackContentCC">人关注 | </text>
+        <text class="ackContentCC">98</text>
+        <text class="ackContentCC">个回答</text>
+      </view>
+    </view>
+    <view class="ackContentA">
+      <image src="./image/ask@2x.png" class="ackContentAA"></image>
+      <view class="ackContentB">
+        <text class="ackContentBB">塔楼，户型是南北通透面积114平不有多少？</text>
+      </view>
+      <view class="ackContentC">
+        <text class="ackContentCC">1,982</text>
+        <text class="ackContentCC">人关注 | </text>
+        <text class="ackContentCC">98</text>
+        <text class="ackContentCC">个回答</text>
+      </view>
+    </view>
+    <view class="ackContentA">
+      <image src="./image/ask@2x.png" class="ackContentAA"></image>
+      <view class="ackContentB">
+        <text class="ackContentBB">塔楼，户型是南北通透面积114平不有多少？</text>
+      </view>
+      <view class="ackContentC">
+        <text class="ackContentCC">1,982</text>
+        <text class="ackContentCC">人关注 | </text>
+        <text class="ackContentCC">98</text>
+        <text class="ackContentCC">个回答</text>
+      </view>
+    </view>
+  </view>
+  <view class="recommendall">
+    <view class="askTitle">
+      <text class="askTitleA">周边推荐</text>
+      <text class="askTitleB">更多推荐></text>
+    </view>
+    <view class="recommendallA">
+      <image src="./image/recommend1.png" class="recommendallAA"></image>
+      <view class="recommendallAB">
+        <text class="recommendallABB">西山甲一号山甲山甲…</text>
+        <text class="recommendallABC">住宅</text>
+      </view>
+      <view class="recommendallAC">
+        <text class="recommendallACC">均价</text>
+        <text class="recommendallACC">87152</text>
+        <text class="recommendallACC">元/平
+        </text>
+      </view>
+    </view>
+  </view>
+  <view class="bottomall">
+    <text class="bottomallA">预售许可证： 京房售证字（2017）7号</text>
+  </view>
+  <view class="linkall">
+    <text class="linkallA">询优惠</text>
+    <text class="linkallB">联系售楼处</text>
   </view>
 </view>
 

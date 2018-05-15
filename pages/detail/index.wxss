@@ -1,6 +1,11 @@
 /* pages/detail/index.wxss */
+.clearfix::after{
+  display: block;
+  clear: both;
+  height: 0;
+  content: "";
+}
 .Info{
-
   background: rgb(246, 246, 247);
 }
 .topall{  
@@ -13,9 +18,27 @@
   background: #fff;
 }
 .commentall{
-  padding: 0rpx 44rpx;
+  padding: 0rpx 44rpx 40rpx 44rpx;
   margin-top: 24rpx;
-  background: #000;
+  background: #fff;
+}
+.askall{
+  padding: 40rpx 44rpx 40rpx 44rpx;
+  margin-top: 24rpx;
+  background: #fff;
+}
+.recommendall{
+  padding:40rpx 44rpx 40rpx 44rpx;
+  margin-top: 24rpx;
+  background: #fff;
+}
+.bottomall{
+  margin-top: 24rpx;
+  background: rgba(248,248,249,1);
+}
+.linkall{
+  padding:16rpx 16rpx 16rpx 16rpx;
+  background: #fff;
 }
 .toptitle{
   font-family: PingFangSC-Medium;
@@ -195,7 +218,6 @@
   color: #3072F6;
 }
 .houseDetail{
-  padding-top: 40rpx;
   padding-left: 250rpx;
   position: relative;
 }
@@ -207,12 +229,14 @@
   margin: 40rpx 40rpx 40rpx 0;
 }
 .houseDetailA{
+  display: inline-block;
   font-family: PingFangHK-Medium;
   font-size: 32rpx;
   color: #394043;
   letter-spacing: 0;
-  line-height: 50rpx;
+  line-height: 44rpx;
   font-weight: 500;
+  margin-top: 30rpx;
 }
 .houseDetailB{
    width: 60rpx;
@@ -248,6 +272,7 @@
   color: #6B7072;
   letter-spacing: 0;
   line-height: 34rpx;
+  margin-top: 8rpx;
 }
 .houseDetailE{
   display: inline-block;
@@ -256,15 +281,19 @@
   color: #9C9FA1;
   letter-spacing: 0;
   margin-right: 28rpx;
+  margin-top: 12rpx;
   border: 2rpx solid #E5E5E5;
   border-radius: 4rpx;
+  line-height: 32rpx;
 }
 .houseDetailF{
   font-family: PingFangSC-Medium;
-  font-size: 16px;
+  font-size: 32rpx;
   color: #FE615A;
   letter-spacing: 0;
   text-align: center;
+  margin-top: 8rpx;
+  line-height: 44rpx;
   }
 .houseDetailG {
   width: 50rpx;
@@ -311,6 +340,257 @@
   letter-spacing: 0;
   line-height: 36rpx;
   margin: 54rpx 0rpx;
-  }
-  .commentTitle{
-  }
+}
+.commentImg{
+
+}
+.commentImgA{
+   width: 24rpx;
+   height: 24rpx;
+   margin-right: 20rpx;
+ }
+.commentImgB{
+  font-family: PingFangHK-Regular;
+  font-size: 30rpx;
+  color: #666666;
+  letter-spacing: -0.72rpx;
+  line-height: 42rpx;
+  margin-top: 28rpx;
+  margin-right: 10rpx;
+}
+.commentImgC{
+  font-family: PingFangHK-Medium;
+  font-size: 40rpx;
+  color: #FF7326;
+  letter-spacing: -0.96rpx;
+  line-height: 56rpx;
+  margin-top: 28rpx;
+  margin-right: 10rpx;
+}
+.commentComment{
+  margin-top: 12rpx;
+}
+.commentCommentA{
+  font-family: PingFangHK-Regular;
+  font-size: 24rpx;
+  color: #999999;
+  letter-spacing: 0;
+  line-height:  34rpx;
+  margin-right: 26rpx;
+}
+.centerborder{
+  width: 706rpx;
+  border: 1rpx solid #E5E5E5;
+  height: 0rpx;
+  margin-top: 32rpx;
+}
+.commentComList{
+  margin-top: 28rpx;
+}
+.commentComListAA{
+  display: inline-block;
+  background: rgba(48,114,246,0.1);
+  padding: 0rpx 34rpx;
+  line-height: 60rpx;
+  border-radius: 100rpx;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+}
+.commentComListBB{
+  font-family: PingFangHK-Regular;
+  font-size: 24rpx;
+  color: #3072F6;
+  letter-spacing: -0.58rpx;
+}
+.commentComListB{
+  font-family: PingFangHK-Regular;
+  font-size: 24rpx;
+  color: #101D37;
+  letter-spacing: -0.58rpx;
+}
+.commentComListA{
+  background: rgba(243,244,245,1);
+  display: inline-block;
+  padding: 0rpx 34rpx;
+  line-height: 60rpx;
+  border-radius: 100rpx;
+  margin-right: 20rpx;
+  margin-top: 20rpx;
+}
+.commentEgA{
+  margin-top: 34rpx;
+  position: relative;
+  padding-left: 96rpx;
+}
+.commentEgAA{
+  width: 74rpx;
+  height: 74rpx;
+  position: absolute;
+  left: 0;
+}
+.commentEgBC{
+  font-weight: 500;
+}
+.commentEgCC{
+  width: 16rpx;
+  height: 16rpx;
+  margin-right: 8rpx;
+}
+.commentEgCD{
+  font-family: PingFangHK-Regular;
+  font-size: 24rpx;
+  color: #9399A5;
+  letter-spacing: -0.58rpx;
+  margin-right: 16rpx;
+  line-height: 34rpx;
+}
+.commentEgCE{
+  display: inline-block;
+  border: 2rpx solid  #9399A5;
+  height: 16rpx;
+  margin-left: 6rpx;
+  margin-right: 6rpx
+}
+.commentEgB{
+  height: 142rpx;
+}
+.commentEgBB{
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #101D37;
+  letter-spacing: 0;
+  line-height: 46rpx;
+  font-weight: 500;
+}
+.commentEgC{
+
+}
+.commentEgCC{
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  line-height: 36rpx;
+  color: #859BAE;
+  letter-spacing: 0;
+  text-align: left;
+}
+.askTitle{
+}
+.askTitleA{
+  font-family: PingFangSC-Medium;
+  font-size: 38rpx;
+  color: #394043;
+  letter-spacing: -0.92rpx;
+  font-weight: 600;
+  line-height: 52rpx;
+}
+.askTitleB{
+  float: right;
+  ont-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #9C9FA1;
+  letter-spacing: 0;
+  line-height: 52rpx;
+}
+.ackContentA{
+  position: relative;
+  padding-left: 46rpx;
+}
+.ackContentAA{
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  left: 0;
+  top: 16rpx;
+}
+.ackContentB{
+  margin-top: 26rpx;
+}
+.ackContentBB{
+  font-family: PingFangSC-Medium;
+  font-size: 16px;
+  color: #394043;
+  letter-spacing: 0;
+  line-height: 22rpx;
+}
+.ackContentCC{
+  font-family: PingFangSC-Regular;
+  font-size: 26rpx;
+  color: #9C9FA1;
+  letter-spacing: 0;
+  line-height: 26rpx;
+  font-weight: 500;
+}
+.recommendallAA{
+  width:390rpx;
+  height: 292rpx;
+  margin: 32rpx 20rpx 28rpx 0rpx;
+}
+.recommendallABB{
+  font-family: PingFangSC-Regular;
+  font-size: 32rpx;
+  color: #394043;
+  letter-spacing: 0;
+  line-height: 32rpx;
+}
+.recommendallABC{
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+  font-size: 22rpx;
+  color: #269CFF;
+  letter-spacing: 0;
+  line-height: 30rpx;
+  background: rgba(38,156,255,0.15);
+  border-radius: 4rpx;
+  width: 64rpx;
+  text-align: center
+}
+.recommendallACC{
+  font-family: PingFangHK-Regular;
+  font-size: 26rpx;
+  color: #9C9FA1;
+  letter-spacing: -0.50rpx;
+  line-height: 36rpx;
+}
+.recommendallACC{
+  font-family: PingFangSC-Medium;
+  font-size: 32rpx;
+  color: #FE615A;
+  letter-spacing: 0;
+  font-weight: 500;
+  line-height: 44rpx;
+}
+.bottomallA{
+  display: inline-block;
+  font-family: PingFangHK-Regular;
+  font-size: 26rpx;
+  color: #6B7072;
+  letter-spacing: -0.62rpx;
+  line-height: 96rpx;
+  text-align: center;
+  width: 750rpx;
+}
+.linkallA{
+  display: inline-block;
+  ont-family: PingFangHK-Medium;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  letter-spacing: -0.78px;
+  line-height: 88rpx;
+  width: 351rpx;
+  text-align: center;
+  background: linear-gradient(-148deg, #FF9793 0%, #FE615A 100%);
+  border-radius: 44rpx;
+  margin-right: 16rpx;
+}
+.linkallB{
+  display: inline-block;
+  ont-family: PingFangHK-Medium;
+  font-size: 32rpx;
+  color: #FFFFFF;
+  letter-spacing: -0.78px;
+  line-height: 88rpx;
+  width: 351rpx;
+  text-align: center;
+  background-image: linear-gradient(-148deg, #6898F8 0%, #2C68E0 100%);
+  border-radius: 44rpx;
+}

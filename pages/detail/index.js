@@ -5,16 +5,16 @@ Page({
    * 页面的初始数据
    */
   data: {
-   
+   mainInfo:{}
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
-  },
+    this.getData();
 
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -33,14 +33,14 @@ Page({
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
-  
+ 
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-    
+ 
   },
 
   /**
@@ -62,6 +62,23 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  getData: function () {
+    var that = this;
+    wx.request({
+      url: 'http://47.93.220.17/Home/Bk/xinfang',
+      method: 'GET',
+      dataType: 'json',
+      responseType: 'text',
+      success: function(res) {
+        console.log(res.data);
+        that.setData({
+          mainInfo: res.data
+        })
+      }
+    })
   }
+  
+
   
 })
