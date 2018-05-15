@@ -154,8 +154,8 @@
       <text class="commentImgC">4.0</text>
       <text class="commentImgB">分</text>
     </view>
-    <view class="commentComment" wx:for="{{mainInfo.data.comments.tab_score}}">
-      <text class="commentCommentA">{{item.name}}{{item.score}}</text>
+    <view class="commentComment">
+      <text class="commentCommentA" wx:for="{{mainInfo.data.comments.tab_score}}">{{item.name}}{{item.score}}</text>
     </view>
     <view class="centerborder"></view>
     <view class="commentComList">
