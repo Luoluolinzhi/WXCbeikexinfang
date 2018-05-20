@@ -233,16 +233,21 @@
       <text class="askTitleA">周边推荐</text>
       <text class="askTitleB">更多推荐></text>
     </view>
-    <view class="recommendallA">
-      <image src="./image/recommend1.png" class="recommendallAA"></image>
-      <view class="recommendallAB">
-        <text class="recommendallABB">西山甲一号山甲山甲…</text>
-        <text class="recommendallABC">住宅</text>
+    <scroll-view scroll-x class="image_scroll_x" wx:for="{{mainInfo.data.hotlists}}">
+      <view class="recommendallA">
+        <image src="{{item.image}}" class="recommendallAA"></image>
+        <view class="recommendallAB">
+          <text class="recommendallABB">{{item.title}}</text>
+          <text class="recommendallABC">住宅</text>
+        </view>
+        <view>
+          <text class="recommendallABD">{{item.address}}</text>
+        </view>
+        <view class="recommendallAC">
+          <text class="recommendallACC">均价{{item.uprice}}元/平</text>
+        </view>
       </view>
-      <view class="recommendallAC">
-        <text class="recommendallACC">均价87152元/平</text>
-      </view>
-    </view>
+    </scroll-view>
   </view>
   <view class="bottomall">
     <text class="bottomallA">预售许可证： 京房售证字（2017）7号</text>

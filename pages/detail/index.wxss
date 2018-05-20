@@ -521,6 +521,13 @@
   line-height: 26rpx;
   font-weight: 500;
 }
+.image_scroll_x{
+  overflow-x: scroll;
+  white-space: nowrap;
+}
+.recommendallA{
+  display: inline-block;
+}
 .recommendallAA{
   width:390rpx;
   height: 292rpx;
@@ -543,7 +550,16 @@
   background: rgba(38,156,255,0.15);
   border-radius: 4rpx;
   width: 64rpx;
-  text-align: center
+  text-align: center;
+  margin-left:6rpx;
+}
+.recommendallABD{
+  font-family: PingFangHK-Regular;
+  font-size: 26rpx;
+  color: #9C9FA1;
+  letter-spacing: -0.5rpx;
+  text-align: center;
+  line-height: 36rpx;
 }
 .recommendallACC{
   font-family: PingFangHK-Regular;
