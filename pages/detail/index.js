@@ -115,7 +115,7 @@ Page({
     wx.request({
       url: 'http://47.93.220.17/Home/Bk/getListsByType',
       data: {
-        type_id : index
+        type_id : index,
       },
       method: 'GET',
       dataType: 'json',
@@ -123,12 +123,12 @@ Page({
       success: function (res) {
         var infoTemp = that.data.mainInfo;
         infoTemp.data.typs_conditions.forEach(function (item) {
-          item.d = false
+          item.d = false,
         })
         infoTemp.data.typs_conditions[index - 1].d = true;
         that.setData({
           HouseInfo: res.data,
-          mainInfo: infoTemp
+          mainInfo: infoTemp,
         })
       },
     });
