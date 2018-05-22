@@ -67,12 +67,12 @@
   </view>
   <view class="contentall">
     <view class="housenumber" >
-      <text wx:for="{{mainInfo.data.typs_conditions}}" wx:key="" class="housenum {{item.housethis ? 'housethis' : ''}}" bindtap="clickType">{{item.name}}</text>
+      <text wx:for="{{mainInfo.data.typs_conditions}}"  wx:key=""  class="housenum {{item.d ? 'housethis' : ''}}"  data-index="{{index+1}}"  bindtap="clickType">{{item.name}}</text>
       <!-- <text class="housenum">三室</text> -->
       <!-- <text class="housenum">二室</text> -->
     </view>
     <view class="houseInfo_all">
-      <view class="houseDetail" wx:for="{{HouseInfo.data.house_lists}}">
+      <view class="houseDetail" wx:for="{{HouseInfo.data.house_lists}}"  wx:key="">
         <image src="./image/aa.png" class="houseDetailimg"></image>
         <view class="">
           <view>
@@ -84,7 +84,7 @@
             <text class="houseDetailD">建面191㎡/南北向</text>
           </view>
           <view>
-            <text class="houseDetailE"  wx:for="{{item.tabs}}">{{item}}</text>
+            <text class="houseDetailE"  wx:for="{{item.tabs}}"  wx:key="">{{item}}</text>
             <!-- <text class="houseDetailE">干湿分离</text> -->
             <!-- <text class="houseDetailE">户型方正</text> -->
           </view>
@@ -151,7 +151,7 @@
       <text class="commentImgB">分</text>
     </view>
     <view class="commentComment">
-      <text class="commentCommentA" wx:for="{{mainInfo.data.comments.tab_score}}">{{item.name}}{{item.score}}</text>
+      <text class="commentCommentA" wx:for="{{mainInfo.data.comments.tab_score}}"  wx:key="">{{item.name}}{{item.score}}</text>
     </view>
     <view class="centerborder"></view>
     <view class="commentComList">
@@ -174,7 +174,7 @@
         <text class="commentComListB">有图(5)</text>
       </view>
     </view>
-    <view class="commentEg"   wx:for="{{mainInfo.data.comments.comment}}">
+    <view class="commentEg"   wx:for="{{mainInfo.data.comments.comment}}"  wx:key="">
       <view class="commentEgA">
         <image src="{{item.user_image}}" class="commentEgAA"></image>
         <view class="commentEgB">
@@ -211,7 +211,7 @@
       <text class="askTitleA">买房问大家(1389)</text>
       <text class="askTitleB">查看全部></text>
     </view>
-    <view wx:for="{{mainInfo.data.questions}}">
+    <view wx:for="{{mainInfo.data.questions}}"  wx:key="">
       <view class="ackContentA">
         <image src="./image/ask@2x.png" class="ackContentAA"></image>
         <view class="ackContentB">
@@ -229,7 +229,7 @@
       <text class="askTitleA">周边推荐</text>
       <text class="askTitleB">更多推荐></text>
     </view>
-    <scroll-view scroll-x class="image_scroll_x" wx:for="{{mainInfo.data.hotlists}}">
+    <scroll-view scroll-x class="image_scroll_x" wx:for="{{mainInfo.data.hotlists}}"  wx:key="">
       <view class="recommendallA">
         <image src="{{item.image}}" class="recommendallAA"></image>
         <view class="recommendallAB">

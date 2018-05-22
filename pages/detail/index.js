@@ -78,19 +78,22 @@ Page({
       dataType: 'json',
       responseType: 'text',
       success: function(res) {
+        //默认显示第一项样式
+        res.data.data.typs_conditions.forEach(function (t, x) {
+          if (x == 0) {
+            t.d = true;
+          }
+          else {
+            t.d = false;
+          }
+        });
         that.setData({
           mainInfo: res.data
-        })
+        });
+        
       },
     });
-    res.data.typs_conditions.forEach(function(t,x){
-      if(x == 0){
-        t.housethis = true;
-      }
-      else{
-        t.housethis = false;
-      }
-    })
+   
   },
   getSecData: function(){
     var that = this;
@@ -99,9 +102,6 @@ Page({
       method:'GET',
       dataType:'json',
       responseType:'text',
-      data:{
-       
-      },
       success: function(res){
         that.setData({
           HouseInfo:res.data,  
@@ -109,32 +109,29 @@ Page({
       },
     });
   },
-  clickType: function(res){
-     
-    var index = res.currentTarget.dataset.index;
+  clickType: function(event){
+    var index = event.currentTarget.dataset.index;
+    var that = this;
     wx.request({
       url: 'http://47.93.220.17/Home/Bk/getListsByType',
       data: {
-        type_id : index+1,
+        type_id : index
       },
       method: 'GET',
       dataType: 'json',
       responseType: 'text',
-      success: function(res) {
-        this.setData({
-          HouseInfo: HouseInfoTimp,
-        });
+      success: function (res) {
+        var infoTemp = that.data.mainInfo;
+        infoTemp.data.typs_conditions.forEach(function (item) {
+          item.d = false
+        })
+        infoTemp.data.typs_conditions[index - 1].d = true;
+        that.setData({
+          HouseInfo: res.data,
+          mainInfo: infoTemp
+        })
       },
     });
-    var HouseInfotimp = this.data.HouseInfo;
-    res.data.typs_conditions.forEach(function (t, x) {
-      if (x == 0) {
-        t.housethis = true;
-      }
-      else {
-        t.housethis = false;
-      }
-    })
   },
   
 })
