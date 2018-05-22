@@ -66,77 +66,73 @@
     </view>
   </view>
   <view class="contentall">
-    <view class="housenumber">
-      <text class="housenum housethis">四室</text>
-      <text class="housenum">三室</text>
-      <text class="housenum">二室</text>
+    <view class="housenumber" >
+      <text wx:for="{{mainInfo.data.typs_conditions}}" wx:key="" class="housenum {{item.housethis ? 'housethis' : ''}}" bindtap="clickType">{{item.name}}</text>
+      <!-- <text class="housenum">三室</text> -->
+      <!-- <text class="housenum">二室</text> -->
     </view>
-    <view class="houseDetail">
-      <image src="./image/aa.png" class="houseDetailimg"></image>
-      <view class="">
-        <view>
-          <text class="houseDetailA">四室一厅两卫</text>
-          <text class="houseDetailB">在售</text>
-          <text class="houseDetailC">热门</text>
-        </view>
-        <view>
-          <text class="houseDetailD">建面191㎡/南北向</text>
-        </view>
-        <view>
-          <text class="houseDetailE">多卫</text>
-          <text class="houseDetailE">干湿分离</text>
-          <text class="houseDetailE">户型方正</text>
-        </view>
-        <view>
-          <text class="houseDetailF">约</text>
-          <text class="houseDetailF">1630</text>
-          <text class="houseDetailF">万/套</text>
+    <view class="houseInfo_all">
+      <view class="houseDetail" wx:for="{{HouseInfo.data.house_lists}}">
+        <image src="./image/aa.png" class="houseDetailimg"></image>
+        <view class="">
+          <view>
+            <text class="houseDetailA">{{item.title}}</text>
+            <text class="houseDetailB">在售</text>
+            <text class="houseDetailC">热门</text>
+          </view>
+          <view>
+            <text class="houseDetailD">建面191㎡/南北向</text>
+          </view>
+          <view>
+            <text class="houseDetailE"  wx:for="{{item.tabs}}">{{item}}</text>
+            <!-- <text class="houseDetailE">干湿分离</text> -->
+            <!-- <text class="houseDetailE">户型方正</text> -->
+          </view>
+          <view>
+            <text class="houseDetailF">约{{item.price}}万/套</text>
+          </view>
         </view>
       </view>
-    </view>
-    <view class="houseDetail">
-      <image src="./image/bb.png" class="houseDetailimg"></image>
-      <view class="">
-        <view>
-          <text class="houseDetailA">四室两厅两卫</text>
-          <text class="houseDetailG">待售</text>
+      <!-- <view class="houseDetail"> 
+        <image src="./image/bb.png" class="houseDetailimg"></image>
+        <view class="">
+          <view>
+            <text class="houseDetailA">四室两厅两卫</text>
+            <text class="houseDetailG">待售</text>
+          </view>
+          <view>
+            <text class="houseDetailD">建面191㎡/南北向</text>
+          </view>
+          <view>
+            <text class="houseDetailE">多卫</text>
+            <text class="houseDetailE">干湿分离</text>
+            <text class="houseDetailE">户型方正</text>
+          </view>
+          <view>
+            <text class="houseDetailF">约1630万/套</text>
+          </view>
         </view>
-        <view>
-          <text class="houseDetailD">建面191㎡/南北向</text>
+      </view>  -->
+      <!-- <view class="houseDetail"> 
+        <image src="./image/cc.png" class="houseDetailimg"></image>
+        <view class="">
+          <view>
+            <text class="houseDetailA">四室两厅三卫</text>
+            <text class="houseDetailH">售罄</text>
+          </view>
+          <view>
+            <text class="houseDetailD">建面191㎡/南北向</text>
+          </view>
+          <view>
+            <text class="houseDetailE">多卫</text>
+            <text class="houseDetailE">干湿分离</text>
+            <text class="houseDetailE">户型方正</text>
+          </view>
+          <view>
+            <text class="houseDetailF">约1630万/套</text>
+          </view>
         </view>
-        <view>
-          <text class="houseDetailE">多卫</text>
-          <text class="houseDetailE">干湿分离</text>
-          <text class="houseDetailE">户型方正</text>
-        </view>
-        <view>
-          <text class="houseDetailF">约</text>
-          <text class="houseDetailF">1630</text>
-          <text class="houseDetailF">万/套</text>
-        </view>
-      </view>
-    </view>
-    <view class="houseDetail">
-      <image src="./image/cc.png" class="houseDetailimg"></image>
-      <view class="">
-        <view>
-          <text class="houseDetailA">四室两厅三卫</text>
-          <text class="houseDetailH">售罄</text>
-        </view>
-        <view>
-          <text class="houseDetailD">建面191㎡/南北向</text>
-        </view>
-        <view>
-          <text class="houseDetailE">多卫</text>
-          <text class="houseDetailE">干湿分离</text>
-          <text class="houseDetailE">户型方正</text>
-        </view>
-        <view>
-          <text class="houseDetailF">约</text>
-          <text class="houseDetailF">1630</text>
-          <text class="houseDetailF">万/套</text>
-        </view>
-      </view>
+      </view>  -->
     </view>
   </view>
   <view class="commentall">

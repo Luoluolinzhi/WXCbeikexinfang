@@ -80,23 +80,6 @@
 }
 .topimage{
   background: #fff;
-  /* display: -webkit-flex;  Safari 
-  display: flex;
-}
-.topimagea{
- width:476rpx;
- height: 360rpx; 
-
-}
-.topimageb{
-  width: 232rpx;
-  height: 174rpx;
-  
-}
-.topimagec{
-  width: 232rpx;
-  height: 174rpx; */
-  
 }
 .topimaged{
   width: 654rpx;

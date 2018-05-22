@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-   mainInfo:{}
+   mainInfo:{},
+   HouseInfo:{},
   },
 
   /**
@@ -13,6 +14,8 @@ Page({
    */
   onLoad: function (options) {
     this.getData();
+    this.getSecData();
+    this.clickType();
 
   },
   /**
@@ -75,14 +78,63 @@ Page({
       dataType: 'json',
       responseType: 'text',
       success: function(res) {
-        console.log(res.data);
         that.setData({
           mainInfo: res.data
         })
+      },
+    });
+    res.data.typs_conditions.forEach(function(t,x){
+      if(x == 0){
+        t.housethis = true;
+      }
+      else{
+        t.housethis = false;
       }
     })
-  }
-  
-
+  },
+  getSecData: function(){
+    var that = this;
+    wx.request({  
+      url: 'http://47.93.220.17/Home/Bk/getListsByType',
+      method:'GET',
+      dataType:'json',
+      responseType:'text',
+      data:{
+       
+      },
+      success: function(res){
+        that.setData({
+          HouseInfo:res.data,  
+        });
+      },
+    });
+  },
+  clickType: function(res){
+     
+    var index = res.currentTarget.dataset.index;
+    wx.request({
+      url: 'http://47.93.220.17/Home/Bk/getListsByType',
+      data: {
+        type_id : index+1,
+      },
+      method: 'GET',
+      dataType: 'json',
+      responseType: 'text',
+      success: function(res) {
+        this.setData({
+          HouseInfo: HouseInfoTimp,
+        });
+      },
+    });
+    var HouseInfotimp = this.data.HouseInfo;
+    res.data.typs_conditions.forEach(function (t, x) {
+      if (x == 0) {
+        t.housethis = true;
+      }
+      else {
+        t.housethis = false;
+      }
+    })
+  },
   
 })
