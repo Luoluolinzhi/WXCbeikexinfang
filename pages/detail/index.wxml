@@ -187,11 +187,15 @@
             <image class="commentEgCC" src="./image/Star_small_act@2x.png"></image>
             <image class="commentEgCC" src="./image/Star_small_act@2x.png"></image>
             <image class="commentEgCC" src="./image/Star_small_nor@2x.png"></image>
-            <text class="commentEgCD">配套3</text>
+            <text wx:for="{{item.user_score}}" wx:key="">
+              <text class="commentEgCD">{{item.name}}{{item.score}}</text>
+              <text class="commentEgCE">|</text>
+            </text>
+            <!-- <text class="commentEgCD">配套3</text>
             <view class="commentEgCE"></view>
             <text class="commentEgCD">交通3</text>
             <view class="commentEgCE"></view>
-            <text class="commentEgCD">绿化3</text> 
+            <text class="commentEgCD">绿化3</text>  -->
           </view>
         </view>
       </view>
