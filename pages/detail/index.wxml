@@ -67,7 +67,7 @@
   </view>
   <view class="contentall">
     <view class="housenumber" >
-      <text wx:for="{{mainInfo.data.typs_conditions}}"  wx:key=""  class="housenum {{item.d ? 'housethis' : ''}}"  data-index="{{index+1}}"  bindtap="clickType">{{item.name}}</text>
+      <text wx:for="{{mainInfo.data.typs_conditions}}"  wx:key=""  class="housenum  {{item.d ? 'housethis' : ''}}"  data-index="{{index+1}}"  bindtap="clickType">{{item.name}}</text>
       <!-- <text class="housenum">三室</text> -->
       <!-- <text class="housenum">二室</text> -->
     </view>
