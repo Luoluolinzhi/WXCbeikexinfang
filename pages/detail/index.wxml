@@ -233,8 +233,8 @@
       <text class="askTitleA">周边推荐</text>
       <text class="askTitleB">更多推荐></text>
     </view>
-    <scroll-view scroll-x class="image_scroll_x" wx:for="{{mainInfo.data.hotlists}}"  wx:key="">
-      <view class="recommendallA">
+    <scroll-view scroll-x class="image_scroll_x" >
+      <view class="recommendallA" wx:for="{{mainInfo.data.hotlists}}"  wx:key="">
         <image src="{{item.image}}" class="recommendallAA"></image>
         <view class="recommendallAB">
           <text class="recommendallABB">{{item.title}}</text>
