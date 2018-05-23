@@ -424,16 +424,15 @@
   font-family: PingFangHK-Regular;
   font-size: 24rpx;
   color: #9399A5;
-  letter-spacing: -0.58rpx;
   margin-right: 16rpx;
   line-height: 34rpx;
 }
 .commentEgCE{
-  display: inline-block;
-  border: 2rpx solid  #9399A5;
-  height: 16rpx;
-  margin-left: 6rpx;
-  margin-right: 6rpx
+  line-height: 34rpx;
+  color: #9399A5;
+  font-size: 24rpx;
+  margin-left: 4rpx;
+  margin-right: 8rpx
 }
 .commentEgB{
   height: 142rpx;
